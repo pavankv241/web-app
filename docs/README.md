@@ -1,41 +1,47 @@
-# Website
+---
+title: Project Setup Guide
+---
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+# Project Setup Guide
 
-### Installation
+Follow these steps to set up and run the **Crypto Price Tracker** project along with its documentation.
 
-```
-$ yarn
-```
+##  Running the Project
 
-### Local Development
+### 1️ Clone the Repository  
+Clone the project from GitHub and navigate into the project folder:
 
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
+```sh
+git clone https://github.com/pavankv241/web-app.git
+cd web-app
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+### 2️ Install Dependencies
+```sh
+npm install
 ```
 
-Not using SSH:
-
+### 3 Start the Web App
+```sh
+npm run dev
 ```
-$ GIT_USER=<Your GitHub username> yarn deploy
+By default, the app will be accessible at:
+ http://localhost:3000
+
+### 4 Running the Documentation (Docusaurus)
+```sh
+cd docs
+npm run start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Access the documentation at:
+http://localhost:3001/docs
+
+#  Quick Reference Guide
+
+| Step | Command | Description |
+|------|---------|-------------|
+| 1️ | `git clone https://github.com/pavankv241/web-app.git` | Clone the repository |
+| 2️ | `npm install` | Install dependencies |
+| 3️ | `npm run dev` | Start the web app (Next.js) |
+| 4️ | `cd docs && npm run start` | Start the documentation (Docusaurus) |
